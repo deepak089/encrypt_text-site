@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  position: relative;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: normal;
+  word-spacing: 20px;
+  background:linear-gradient(rgb(118, 112, 112),rgb(231, 30, 64));
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+  
+}
+
+body::before{
+  content: "";
+  position:absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index:-1;
+  background:linear-gradient(rgb(204, 211, 108),rgb(22, 68, 4));
+  clip-path: circle(30% at right 70% );
+  
+}
+body::after{
+  content: "";
+  position:absolute;
+  top: -10%;
+  left: -10%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background:linear-gradient(#e2620d,#6dd40d);
+  clip-path: circle(20% at 10% 10%);
+}
+.wrapper{
+  /* background: rgb(214, 126, 126); */
+  height: 600px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 1vmin;
+  box-shadow:inset 0 0 128px 0 rgba(0,0,0,0.1),
+              inset 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+ .name label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 8vmin;
+  margin-bottom: 2vmin;
+  font-size: 6vmin;
+}
+.name textarea{
+  width: 80vmin;
+  height: 10vmin;
+  padding-left: 2vmin;
+  margin-left: 8vmin;
+}
+.key label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 8vmin;
+  margin-bottom: 2vmin;
+  font-size: 6vmin;
+}
+.key input{
+    width: 80vmin;
+    height: 10vmin;
+    padding-left: 1vmin;
+    margin-left: 1vmin;
+    height: 8vmin;
+    font-weight: 500;
+    font-size: 3vmin;
+    margin-bottom: 18px;
+}
+
+#data{
+  font-size: 3vmin;
+  font-weight: 400;
+  word-wrap: normal;
+  margin-top: 2vmin;
+}
+.text{
+  padding-top: 12vmin;
+  font-size: 3vmin;
+}
+.thank{
+  padding-top: 3vmin;
+  font-weight: 400;
+  font-size: 5vmin;
+  text-shadow: 2px 2px #ff0000;
+}
